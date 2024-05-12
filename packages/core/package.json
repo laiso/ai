@@ -14,12 +14,13 @@
     "solid/dist/**/*",
     "prompts/dist/**/*",
     "rsc/dist/**/*",
+    "hono/dist/**/*",
     "google/dist/**/*",
     "mistral/dist/**/*"
   ],
   "scripts": {
     "build": "tsup && cat react/dist/index.server.d.ts >> react/dist/index.d.ts",
-    "clean": "rm -rf dist && rm -rf react/dist && rm -rf svelte/dist && rm -rf vue/dist && rm -rf solid/dist && rm -rf rsc/dist",
+    "clean": "rm -rf dist && rm -rf react/dist && rm -rf svelte/dist && rm -rf vue/dist && rm -rf solid/dist && rm -rf rsc/dist && rm -rf rsc/hono",
     "dev": "tsup --watch",
     "lint": "eslint \"./**/*.ts*\"",
     "type-check": "tsc --noEmit",
@@ -75,6 +76,11 @@
       "types": "./solid/dist/index.d.ts",
       "import": "./solid/dist/index.mjs",
       "require": "./solid/dist/index.js"
+    },
+    "./hono": {
+      "types": "./hono/dist/index.d.ts",
+      "import": "./hono/dist/index.mjs",
+      "require": "./hono/dist/index.js"
     }
   },
   "dependencies": {
@@ -131,6 +137,7 @@
     "react": "^18.2.0",
     "solid-js": "^1.7.7",
     "svelte": "^3.0.0 || ^4.0.0",
+    "hono": "^4.3.5",
     "vue": "^3.3.4",
     "zod": "^3.0.0"
   },
@@ -145,6 +152,9 @@
       "optional": true
     },
     "solid-js": {
+      "optional": true
+    },
+    "hohno": {
       "optional": true
     },
     "zod": {
@@ -173,6 +183,7 @@
     "nextjs",
     "svelte",
     "react",
-    "vue"
+    "vue",
+    "hono"
   ]
 }
