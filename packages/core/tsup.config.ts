@@ -103,4 +103,13 @@ export default defineConfig([
       };
     },
   },
+  // Hono APIs
+  {
+    entry: ['hono/index.ts'],
+    outDir: 'hono/dist',
+    format: ['cjs', 'esm'],
+    external: ['react', 'svelte', 'vue', 'solid-js'],
+    dts: true,
+    sourcemap: true,
+  },
 ]);
