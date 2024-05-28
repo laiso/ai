@@ -1,5 +1,54 @@
 # @ai-sdk/openai
 
+## 0.0.16
+
+### Patch Changes
+
+- 2b18fa11: fix (provider/openai): remove object type validation
+
+## 0.0.15
+
+### Patch Changes
+
+- 24683b72: fix (providers): Zod is required dependency
+- Updated dependencies [8e780288]
+  - @ai-sdk/provider@0.0.7
+  - @ai-sdk/provider-utils@0.0.10
+
+## 0.0.14
+
+### Patch Changes
+
+- Updated dependencies [6a50ac4]
+- Updated dependencies [6a50ac4]
+  - @ai-sdk/provider@0.0.6
+  - @ai-sdk/provider-utils@0.0.9
+
+## 0.0.13
+
+### Patch Changes
+
+- 4e3c922: fix (provider/openai): introduce compatibility mode in which "stream_options" are not sent
+
+## 0.0.12
+
+### Patch Changes
+
+- 6f48839: feat (provider/openai): add gpt-4o to the list of supported models
+- 1009594: feat (provider/openai): set stream_options/include_usage to true when streaming
+- 0f6bc4e: feat (ai/core): add embed function
+- Updated dependencies [0f6bc4e]
+  - @ai-sdk/provider@0.0.5
+  - @ai-sdk/provider-utils@0.0.8
+
+## 0.0.11
+
+### Patch Changes
+
+- Updated dependencies [325ca55]
+  - @ai-sdk/provider@0.0.4
+  - @ai-sdk/provider-utils@0.0.7
+
 ## 0.0.10
 
 ### Patch Changes

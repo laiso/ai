@@ -1,5 +1,34 @@
 # @ai-sdk/provider-utils
 
+## 0.0.10
+
+### Patch Changes
+
+- Updated dependencies [8e780288]
+  - @ai-sdk/provider@0.0.7
+
+## 0.0.9
+
+### Patch Changes
+
+- 6a50ac4: feat (provider-utils): add loadSetting and convertAsyncGeneratorToReadableStream helpers
+- Updated dependencies [6a50ac4]
+  - @ai-sdk/provider@0.0.6
+
+## 0.0.8
+
+### Patch Changes
+
+- Updated dependencies [0f6bc4e]
+  - @ai-sdk/provider@0.0.5
+
+## 0.0.7
+
+### Patch Changes
+
+- Updated dependencies [325ca55]
+  - @ai-sdk/provider@0.0.4
+
 ## 0.0.6
 
 ### Patch Changes

@@ -1,5 +1,45 @@
 # @ai-sdk/anthropic
 
+## 0.0.16
+
+### Patch Changes
+
+- 24683b72: fix (providers): Zod is required dependency
+- Updated dependencies [8e780288]
+  - @ai-sdk/provider@0.0.7
+  - @ai-sdk/provider-utils@0.0.10
+
+## 0.0.15
+
+### Patch Changes
+
+- Updated dependencies [6a50ac4]
+- Updated dependencies [6a50ac4]
+  - @ai-sdk/provider@0.0.6
+  - @ai-sdk/provider-utils@0.0.9
+
+## 0.0.14
+
+### Patch Changes
+
+- 06e3934: feat (provider/anthropic): streaming tool calls
+
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [0f6bc4e]
+  - @ai-sdk/provider@0.0.5
+  - @ai-sdk/provider-utils@0.0.8
+
+## 0.0.12
+
+### Patch Changes
+
+- Updated dependencies [325ca55]
+  - @ai-sdk/provider@0.0.4
+  - @ai-sdk/provider-utils@0.0.7
+
 ## 0.0.11
 
 ### Patch Changes

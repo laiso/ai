@@ -1,5 +1,29 @@
 # @ai-sdk/provider
 
+## 0.0.7
+
+### Patch Changes
+
+- 8e780288: feat (ai/provider): add "unknown" finish reason (for models that don't provide a finish reason)
+
+## 0.0.6
+
+### Patch Changes
+
+- 6a50ac4: feat (provider): add additional error types
+
+## 0.0.5
+
+### Patch Changes
+
+- 0f6bc4e: feat (ai/core): add embed function
+
+## 0.0.4
+
+### Patch Changes
+
+- 325ca55: feat (ai/core): improve image content part error message
+
 ## 0.0.3
 
 ### Patch Changes

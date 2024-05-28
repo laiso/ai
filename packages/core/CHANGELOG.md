@@ -1,5 +1,81 @@
 # ai
 
+## 3.1.15
+
+### Patch Changes
+
+- 8e780288: feat (ai/core): add onFinish callback to streamText
+- 8e780288: feat (ai/core): add text, toolCalls, and toolResults promises to StreamTextResult (matching the generateText result API with async methods)
+- Updated dependencies [8e780288]
+  - @ai-sdk/provider@0.0.7
+  - @ai-sdk/provider-utils@0.0.10
+
+## 3.1.14
+
+### Patch Changes
+
+- 6109c6a: feat (ai/react): add experimental_maxAutomaticRoundtrips to useChat
+
+## 3.1.13
+
+### Patch Changes
+
+- 60117c9: dependencies (ai/ui): add React 18.3 and 19 support (peer dependency)
+- Updated dependencies [6a50ac4]
+- Updated dependencies [6a50ac4]
+  - @ai-sdk/provider@0.0.6
+  - @ai-sdk/provider-utils@0.0.9
+
+## 3.1.12
+
+### Patch Changes
+
+- ae05fb7: feat (ai/streams): add StreamData support to streamToResponse
+
+## 3.1.11
+
+### Patch Changes
+
+- a085d42: fix (ai/ui): decouple StreamData chunks from LLM stream
+
+## 3.1.10
+
+### Patch Changes
+
+- 3a21030: feat (ai/core): add embedMany function
+
+## 3.1.9
+
+### Patch Changes
+
+- 18a9655: feat (ai/svelte): add useAssistant
+
+## 3.1.8
+
+### Patch Changes
+
+- 0f6bc4e: feat (ai/core): add embed function
+- Updated dependencies [0f6bc4e]
+  - @ai-sdk/provider@0.0.5
+  - @ai-sdk/provider-utils@0.0.8
+
+## 3.1.7
+
+### Patch Changes
+
+- f617b97: feat (ai): support client/server tool calls with useChat and streamText
+
+## 3.1.6
+
+### Patch Changes
+
+- 2e78acb: Deprecate StreamingReactResponse (use AI SDK RSC instead).
+- 8439884: ai/rsc: make RSC streamable utils chainable
+- 325ca55: feat (ai/core): improve image content part error message
+- Updated dependencies [325ca55]
+  - @ai-sdk/provider@0.0.4
+  - @ai-sdk/provider-utils@0.0.7
+
 ## 3.1.5
 
 ### Patch Changes

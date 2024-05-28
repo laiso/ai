@@ -8,6 +8,7 @@
  * between the rows, but flushing the full payload on each row.
  */
 
+import { mergeStreams } from '../core/util/merge-streams';
 import { parseComplexResponse } from '../shared/parse-complex-response';
 import { IdGenerator, JSONValue } from '../shared/types';
 import { nanoid } from '../shared/utils';
@@ -20,12 +21,17 @@ type Payload = {
   content: string;
 };
 
+/**
+ @deprecated Use AI SDK RSC instead: https://sdk.vercel.ai/docs/ai-sdk-rsc
+ */
 export type ReactResponseRow = Payload & {
   next: null | Promise<ReactResponseRow>;
 };
 
 /**
- * A utility class for streaming React responses.
+A utility class for streaming React responses.
+
+@deprecated Use AI SDK RSC instead: https://sdk.vercel.ai/docs/ai-sdk-rsc
  */
 export class experimental_StreamingReactResponse {
   constructor(
@@ -45,7 +51,7 @@ export class experimental_StreamingReactResponse {
     });
 
     const processedStream: ReadableStream<Uint8Array> =
-      options?.data != null ? res.pipeThrough(options?.data?.stream) : res;
+      options?.data != null ? mergeStreams(options?.data?.stream, res) : res;
 
     let lastPayload: Payload | undefined = undefined;
 

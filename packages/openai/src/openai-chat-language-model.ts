@@ -24,6 +24,7 @@ import { mapOpenAIChatLogProbsOutput } from './map-openai-chat-logprobs';
 type OpenAIChatConfig = {
   provider: string;
   baseURL: string;
+  compatibility: 'strict' | 'compatible';
   headers: () => Record<string, string | undefined>;
 };
 
@@ -198,6 +199,12 @@ export class OpenAIChatLanguageModel implements LanguageModelV1 {
       body: {
         ...args,
         stream: true,
+
+        // only include stream_options when in strict compatibility mode:
+        stream_options:
+          this.config.compatibility === 'strict'
+            ? { include_usage: true }
+            : undefined,
       },
       failedResponseHandler: openaiFailedResponseHandler,
       successfulResponseHandler: createEventSourceResponseHandler(
@@ -419,10 +426,6 @@ const openAIChatResponseSchema = z.object({
 // limited version of the schema, focussed on what is needed for the implementation
 // this approach limits breakages when the API changes and increases efficiency
 const openaiChatChunkSchema = z.object({
-  object: z.enum([
-    'chat.completion.chunk',
-    'chat.completion', // support for OpenAI-compatible providers such as Perplexity
-  ]),
   choices: z.array(
     z.object({
       delta: z.object({
